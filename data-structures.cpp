@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include <string>
+
 #include "test.h"
+#include "SLinkedList.h"
 
 using namespace std;
 
@@ -18,11 +20,20 @@ void testFun() {
     cout << foo.getNoNsStr() << "\n";
 }
 
+void singlyLinkedListDemo() {
+    SLinkedList<string> str;
+    str.addFront("First");
+    str.addFront("Second");
+
+    str.printList();
+}
+
 int main()
 {
     cout << "Hullo World!\n";
     std::cout << "Hello World!\n";
     testFun();
+    singlyLinkedListDemo();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
