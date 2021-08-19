@@ -2,12 +2,27 @@
 //
 
 #include <iostream>
+#include <string>
+#include "test.h"
 
 using namespace std;
 
+void testFun() {
+    int num = 7;
+    string str = "first string";
+    string noNsStr = "second string";
+    Foo foo = Foo(num, str, noNsStr);
+
+    cout << foo.getNum() << "\n";
+    cout << foo.getStr() << "\n";
+    cout << foo.getNoNsStr() << "\n";
+}
+
 int main()
 {
+    cout << "Hullo World!\n";
     std::cout << "Hello World!\n";
+    testFun();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
